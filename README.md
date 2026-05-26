@@ -34,9 +34,7 @@ Para instalar e usar esta extensão no Chrome:
 
 A extensão está configurada para funcionar automaticamente nas seguintes URLs do Airflow:
 
-*   `https://8bf3c3aa78de4ac3a99ca43c5be7a6ce-dot-us-east1.composer.googleusercontent.com/*`
-*   `https://prd-witcher.mglu.io/*`
-*   `https://31c5efd94119490bb4cb9f8673a79a42-dot-us-east1.composer.googleusercontent.com/*`
+*   `host do airflow`
 
 Para adicionar mais URLs ou modificar as existentes, edite o arquivo `chrome-extension/manifest.json` nas seções `host_permissions` e `content_scripts.matches`. Lembre-se de recarregar a extensão em `chrome://extensions` e também a página do Airflow após qualquer alteração no `manifest.json`.
 
