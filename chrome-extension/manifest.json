@@ -7,16 +7,12 @@
     "storage"
   ],
   "host_permissions": [
-    "https://8bf3c3aa78de4ac3a99ca43c5be7a6ce-dot-us-east1.composer.googleusercontent.com/*",
-    "https://prd-witcher.mglu.io/*",
-    "https://31c5efd94119490bb4cb9f8673a79a42-dot-us-east1.composer.googleusercontent.com/*"
+    "host do airflow"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://8bf3c3aa78de4ac3a99ca43c5be7a6ce-dot-us-east1.composer.googleusercontent.com/*",
-        "https://prd-witcher.mglu.io/*",
-        "https://31c5efd94119490bb4cb9f8673a79a42-dot-us-east1.composer.googleusercontent.com/*"
+        "host do airflow"
       ],
       "js": ["content.js"],
       "css": ["tooltip.css"]
