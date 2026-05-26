@@ -1,0 +1,42 @@
+/* tooltip.css */
+.airflow-log-tooltip {
+  position: absolute;
+  z-index: 9999;
+  background-color: #282c34; /* Dark background */
+  color: #abb2bf; /* Light grey text */
+  border: 1px solid #4f5b66;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 800px;
+  max-height: 800px; /* Aumentado novamente */
+  overflow: auto;
+  font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+  font-size: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.airflow-log-tooltip.hidden {
+  display: none;
+}
+
+.airflow-log-tooltip pre {
+  margin: 0;
+  white-space: pre-wrap; /* Wrap long lines */
+  word-wrap: break-word;
+}
+
+/* New styles for H4 and HR */
+.airflow-log-tooltip h4 {
+  color: #61afef; /* A noticeable blue */
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #4f5b66;
+  padding-bottom: 3px;
+  font-size: 1.1em;
+}
+
+.airflow-log-tooltip hr {
+  border: none;
+  border-top: 1px solid #4f5b66;
+  margin: 15px 0;
+}

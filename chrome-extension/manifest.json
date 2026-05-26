@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Airflow Task Log Viewer",
+  "version": "1.0",
+  "description": "Exibe logs de erro de tarefas do Airflow ao passar o mouse sobre elas.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://8bf3c3aa78de4ac3a99ca43c5be7a6ce-dot-us-east1.composer.googleusercontent.com/*",
+    "https://prd-witcher.mglu.io/*",
+    "https://31c5efd94119490bb4cb9f8673a79a42-dot-us-east1.composer.googleusercontent.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://8bf3c3aa78de4ac3a99ca43c5be7a6ce-dot-us-east1.composer.googleusercontent.com/*",
+        "https://prd-witcher.mglu.io/*",
+        "https://31c5efd94119490bb4cb9f8673a79a42-dot-us-east1.composer.googleusercontent.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["tooltip.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
